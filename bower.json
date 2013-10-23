@@ -1,7 +1,7 @@
 {
-    "name": "utils",
-    "version": "0.0.0",
-    "main": "./payment.js",
+    "name": "10digit-utils",
+    "version": "0.0.1",
+    "main": "./utils.js",
     "ignore": [
         "**/.*",
         "node_modules",
