@@ -1,0 +1,19 @@
+.modal-header
+    h3 Login to Your Account
+
+.modal-body
+    form(name="loginForm", action="/login", method="POST")
+        div.alert.alert-error(ng-show="loginForm.$invalid && submitted || denied")
+            button.close(type="button", data-dismiss="alert") &times;
+            p(ng-show="loginForm.email.$error['required']") "Email Address" is required.
+            div(ng-show="denied") {{denied}}
+            p(ng-show="loginForm.password.$error['required']") "Password" is required.
+        .row-fluid
+            .span12
+                label Email Address
+                input(name="email", ng-model="email", type="email", required)
+                label Password
+                input(name="password", ng-model="password", type="password", required)
+.modal-footer
+    button.btn(ng-click="cancel()") Cancel
+    button.btn.btn-primary(ng-click="submit(loginForm, email, password)") Log In

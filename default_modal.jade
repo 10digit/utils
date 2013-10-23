@@ -1,0 +1,7 @@
+.modal-header
+    h3 {{title}}
+.modal-body
+    div(ng-bind-html="content")
+.modal-footer
+    button.btn.btn-primary(ng-click="ok()", ng-hide="hideOk") {{okText}}
+
