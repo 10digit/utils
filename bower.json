@@ -1,6 +1,6 @@
 {
     "name": "10digit-utils",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "main": "./utils.js",
     "ignore": [
         "**/.*",
