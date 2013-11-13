@@ -3,6 +3,7 @@
 
 .modal-body
     form(name="loginForm", action="/login", method="POST")
+        div.alert.alert-info(ng-show="submitted") Logging you in...
         div.alert.alert-error(ng-show="loginForm.$invalid && submitted || denied")
             button.close(type="button", data-dismiss="alert") &times;
             p(ng-show="loginForm.email.$error['required']") "Email Address" is required.
